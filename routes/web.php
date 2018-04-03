@@ -11,4 +11,5 @@
 |
 */
 
-Route::get('/test', '\PhpSoft\Users\Controllers\UserController@getTest');
+Route::get('/login', '\PhpSoft\Users\Controllers\UserController@getViewLogin', ['name' => 'Taylor']);
+Route::get('/register', '\PhpSoft\Users\Controllers\UserController@getViewRegister');
