@@ -7,7 +7,11 @@ use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
-    function getTest($a = 1, $b =3) {
-        return $a+$b;
+    function getViewRegister() {
+        return view('phpsoft.users::register/form');
+    }
+
+    function getViewLogin() {
+        return view('phpsoft.users::login/form');
     }
 }
